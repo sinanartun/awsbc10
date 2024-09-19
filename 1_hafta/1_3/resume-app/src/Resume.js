@@ -8,7 +8,7 @@ const Resume = () => {
         {/* Header */}
         <div className="flex justify-between items-center border-b pb-4 mb-6">
           <div>
-            <h1 className="text-4xl font-bold">[Your Name]</h1>
+            <h1 className="text-4xl font-bold">buda react version</h1>
             <p className="text-lg text-gray-600">[Your Contact Information]</p>
           </div>
           <div className="text-right">
