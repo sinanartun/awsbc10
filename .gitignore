@@ -1,0 +1,46 @@
+# Global rules for all projects
+# Logs and system files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# General IDE/Editor settings
+.vscode/
+.idea/
+
+# Python related
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+**/*.pyd
+**/env/
+**/venv/
+**/ENV/
+**/venv.bak/
+**/*.venv
+**/*.egg
+**/*.egg-info/
+**/dist/
+**/build/
+**/*.whl
+**/.coverage
+**/.tox/
+**/nosetests.xml
+**/coverage.xml
+**/*.cover
+**/.ipynb_checkpoints
+
+# React related
+**/node_modules/
+**/npm-debug.log
+**/yarn-error.log
+**/.yarn-integrity
+**/.yarn/
+**/.pnp.js
+**/.pnp.loader.mjs
+**/build/
+**/dist/
