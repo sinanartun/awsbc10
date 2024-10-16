@@ -1,0 +1,8 @@
+mkdir lambda
+cd lambda
+mkdir python
+cd python
+pip install python-binance -t .
+cd ..
+zip -r python.zip .
+aws s3 cp python.zip s3://awsbc10binancedata/
