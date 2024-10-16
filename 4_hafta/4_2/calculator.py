@@ -2,19 +2,17 @@ import json
 
 def lambda_handler(event, context):
     # Extract parameters from the event
-    action = event.get("action")
-    var1 = event.get("var1")
-    var2 = event.get("var2")
+    action = event["queryStringParameters"]["action"]
+    var1 = event["queryStringParameters"]["var1"]
+    var2 = event["queryStringParameters"]["var2"]
 
     # Check if var1 and var2 are numbers
-    try:
-        var1 = float(var1)
-        var2 = float(var2)
-    except (TypeError, ValueError):
-        return {
-            'statusCode': 400,
-            'body': json.dumps("Invalid input: var1 and var2 must be numbers")
-        }
+
+    var1 = int(var1)
+    var2 = int(var2)
+    print("var1",var1)
+    print("var2", var2)
+
 
     # Perform action based on the action parameter
     if action == "add":
