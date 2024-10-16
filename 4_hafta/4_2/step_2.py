@@ -47,7 +47,7 @@ async def process_and_upload_file(bucket_name, original_file_key):
 
 # Lambda handler for Step 2
 def lambda_handler(event, context):
-    bucket_name = event.get('bucket_name', 'binance33')  # Default bucket name
+    bucket_name = event.get('bucket_name', 'awsbc10binancedata')  # Default bucket name
     original_file_key = event.get('file_key', '')  # Expect the file key to be passed in the event
 
     loop = asyncio.get_event_loop()
