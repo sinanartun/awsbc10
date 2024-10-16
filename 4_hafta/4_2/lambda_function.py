@@ -7,7 +7,7 @@ from binance import AsyncClient, BinanceSocketManager
 
 async def main():
     active_file_time = int(round(time.time()) / 60)
-    new_local_data_file_path = './data/' + str(int(active_file_time * 60)) + '.tsv'
+    new_local_data_file_path = './' + str(int(active_file_time * 60)) + '.tsv'
 
     f = open(new_local_data_file_path, 'w')
     client = await AsyncClient.create()
@@ -26,7 +26,7 @@ async def main():
                 # dolmuş ve biriktirilen datanın bucket'a yüklenmesi gerekli.
 
                 active_file_time = new_file_time
-                new_local_data_file_path = './data/' + str(int(active_file_time * 60)) + '.tsv'
+                new_local_data_file_path = './' + str(int(active_file_time * 60)) + '.tsv'
 
                 f = open(new_local_data_file_path, 'w')
                 print(' #' * 50)
