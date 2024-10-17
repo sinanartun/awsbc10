@@ -1,0 +1,16 @@
+CREATE TABLE `BTCUSDT` (
+  `bid` bigint DEFAULT NULL,
+  `parameter` char(7) DEFAULT NULL,
+  `price` float(7,2) DEFAULT NULL,
+  `quantity` float(7,5) DEFAULT NULL,
+  `time` datetime DEFAULT NULL,
+  `maker` tinyint DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+
+LOAD DATA FROM S3 's3://binance33/1729107360.tsv' INTO TABLE binance.BTCUSDT 
+FIELDS TERMINATED BY '\t' 
+LINES TERMINATED BY '\n' 
+(bid, parameter, price, quantity, time, maker);

@@ -1,0 +1,10 @@
+#cloudshell
+
+mkdir lambda
+cd lambda
+mkdir python
+cd python
+pip install mysql-connector-python -t .
+cd ..
+zip -r python.zip .
+aws s3 cp python.zip s3://binance33/
