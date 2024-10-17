@@ -4,4 +4,4 @@ sudo yum install ./mount-s3.rpm -y
 
 mkdir data
 
-# mount-s3 bucket-name localfolder
+mount-s3 frank-binance data

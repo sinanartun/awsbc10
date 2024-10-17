@@ -8,7 +8,7 @@ from dateutil.parser import parse
 count = 0
 
 
-data_dir = "/home/ec2-user/awsbc10/4_3/data"
+data_dir = "/home/ec2-user/awsbc10/4_3/data/"
 
 
 
