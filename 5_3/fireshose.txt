@@ -1,0 +1,3 @@
+id,symbol,price,quantity,trade_time,maker
+
+FORMAT AS CSV DELIMITER '\t'

@@ -8,7 +8,12 @@ from dateutil.parser import parse
 count = 0
 
 
-data_dir = "/home/ec2-user/awsbc10/4_3/data/"
+data_dir = "./data/"
+if not os.path.exists(data_dir):
+    os.makedirs(data_dir)
+    print(f"Directory '{data_dir}' created.")
+else:
+    print(f"Directory '{data_dir}' already exists.")
 
 
 
