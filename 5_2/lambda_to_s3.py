@@ -2,8 +2,8 @@ import json
 import requests
 import re
 from datetime import datetime
-# import boto3
-# from botocore.exceptions import ClientError
+import boto3
+from botocore.exceptions import ClientError
 
 
 def extract_data(raw_data,symbol):
@@ -17,7 +17,7 @@ def extract_data(raw_data,symbol):
             data_array = match[1:]
             csv_data += f"{date},{','.join(data_array)}\n"
     if csv_data !='date,high,low,close,volume\n':
-        with open(f'./{symbol}.csv', 'w') as f:
+        with open(f'/tmp/{symbol}.csv', 'w') as f:
             f.write(csv_data)
         return csv_data
     else:
