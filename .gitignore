@@ -44,3 +44,25 @@ Thumbs.db         # Windows
 **/.pnp.loader.mjs
 **/build/
 **/dist/
+
+
+# Ignore all Terraform state files and backups
+*.tfstate
+*.tfstate.*
+
+# Ignore all Terraform provider directories
+**/.terraform/
+
+# Ignore Terraform plan output
+*.tfplan
+
+# Ignore logs
+*.log
+
+# Ignore local .env files and configuration
+.env
+.env.*
+
+# Ignore system files
+.DS_Store
+Thumbs.db
