@@ -1,0 +1,15 @@
+boto3
+botocore
+jmespath
+joblib
+numpy
+pandas
+python-dateutil
+pytz
+s3transfer
+scikit-learn
+scipy
+six
+threadpoolctl
+tzdata
+urllib3
